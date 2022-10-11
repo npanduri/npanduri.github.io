@@ -4,9 +4,8 @@
      <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>WELCOME TO NASA GLENN</title>
-        <meta name="description" content="An interactive website to experience the Susan aircraft.">
+        <meta name="description" content="An interactive website to experience the SUSAN aircraft.">
         <link rel="stylesheet" href="main.css">
-    
         <script type="text/javascript" src="ac_quicktime.js"></script>
  
  </head>
@@ -15,25 +14,70 @@
         
         <h1>WELCOME TO NASA GLENN</h1>
         <h2>Experience the SUSAN aircraft</h2>
-
         
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         
-       <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+         <button id="mybtn" align= "center" class="btn btn-primary" onclick="change()" >Plane Model</button>
         
-        <model-viewer src="untitled1.gltf" shadow-intensity="3" camera-controls touch-action="pan-y"></model-viewer>
+        <button id="mybtn2"  align= "center" class="btn btn-secondary" onclick="change2()"> Wingbox Highlighted</button>
+        
+        <button id="mybtn3" align= "center" class="btn btn-third" onclick="change3()"> Wing Engine</button>
+        
+        <button id="mybtn4" align= "center" class="btn btn-fourth" onclick="change4()"> Turbofan</button>
+        
+         <p id="paragraphText" align= "center" class="paragraph"> Subsonic Single Aft Engine(SUSAN )</p>
+        
+        
+        <model-viewer align= "center" id= "modelViewer" camera-controls touch-action="pan-y"  skybox-image= "sky.jpg" src="untitled1.gltf" shadow-intensity="0" ></model-viewer>
         <style>
-model-viewer {
-  width: 1000px;
-  height: 800px;
-}
+            model-viewer {
+                  width: 1500px;
+                  height: 600px;
+
+            
+                border: 10px solid rgba(0, 0, 0, 0.12);
+                        }
+
+            button{
+
+                width 50px;
+                height 80px;
+
+                }                  
 </style>
         
         
+       
+    <script>
         
-    
+        function change()
+        {
+          
+            document.getElementById("modelViewer").src="untitled1.gltf";  
+            document.getElementById("paragraphText").textContent= "Subsonic Single Aft Engine(SUSAN )";
+        }
+        
+        function change2()
+        {
+           document.getElementById("modelViewer").src="wingboxHighlighted1.gltf"; 
+            document.getElementById("paragraphText").textContent= "Natural Laminar Flow & Boundary Layer Ingestion";
+        }
+        
+        function change3()
+        {
+            document.getElementById("modelViewer").src="wingEngine.gltf";
+            document.getElementById("paragraphText").textContent= "Electric Engines";
+        }
+        
+        function change4()
+        {
+            document.getElementById("modelViewer").src="turbine.gltf";
+            document.getElementById("paragraphText").textContent= "20MW Electrified Aircraft Propulsion system";
+        }
+        
+    </script>
         
     </body>
     
-    
 </html>
+
