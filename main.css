@@ -1,14 +1,14 @@
 html {
-    background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-    -webkit-font-smoothing: antialiased;
+  background-image: url(https://t4.ftcdn.net/jpg/02/15/94/83/360_F_215948377_kgIhNUy4X0iYsyUfYd9KKIViSPOxclbC.jpg);
+    
+    
 }
 
 body {
-    background: #fff;
+   background-image: url(https://t4.ftcdn.net/jpg/02/15/94/83/360_F_215948377_kgIhNUy4X0iYsyUfYd9KKIViSPOxclbC.jpg);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
@@ -16,72 +16,197 @@ body {
     padding: 2em 2em 4em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
+h2, h3, h4, h5, h6 {
+    color:  white;
+    font-weight: 800;
     line-height: 1.3;
 }
 
 h1
 {
     text-align:center;
+    color: white;
 }
 
-h2 {
-    margin-top: 1.3em;
+h2 
+{
+    margin-top:1.3em;
 }
 
-a {
+h3
+{
+    position:relative;
+    top: 50px;
+    left: 150px;  
+}
+
+h4
+{
+    position:absolute;
+    top: 850px;
+    left: 380px;
+    font-size:20px;
+}
+
+p2
+{
+    font-size: 20px;
+    color: white; 
+    position: absolute;
+    top: 1000px;
+    left: 95px;
+}
+
+
+p1
+{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 40px; 
+    
+}
+
+p3
+{
+    font-size: 18px;
+    color: white; 
+    position: absolute;
+    top: 1050px;
+    left: 95px;
+}
+
+
+button {
+ 
+  background-color: #e7e7e7; 
+  color: black; /* Gray */
+  border: none;
+  padding: 15px 32px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button
+{
+    position: relative;
+    top: 400px;
+    left: -250px; 
+}
+
+button 
+{
+  transition-duration: 0.4s;
+}
+
+button:hover 
+{
+  background-color: blue;
+  color:white;
+}
+
+model-viewer
+{
+    position: relative;
+    top: 320px;
+    text-align:center;
+}
+
+a 
+{
     color: #0083e8;
 }
 
-b, strong {
+b, strong 
+{
     font-weight: 600;
 }
 
-samp {
+samp 
+{
     display: none;
 }
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
 }
 
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-    
- 
-    
-button {
-  border: black;
-  color: white;
+SUSAN aircraft
+{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-bottom-color: blue;
+}
+
+header
+{
+    background-image: url(https://t4.ftcdn.net/jpg/02/15/94/83/360_F_215948377_kgIhNUy4X0iYsyUfYd9KKIViSPOxclbC.jpg);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+SUSAN intro
+{
+    background-image: url(https://www1.grc.nasa.gov/wp-content/uploads/susan-highres-2-600x437-1.jpeg);
+    background-color: azure;
+}
+
+
+
+Nasa-logo
+{
+    position:fixed;
+    top: 100px;
+    left: 100px;
+
+}
+
+button1
+{
+   background-color: #e7e7e7; 
+  color: black; /* Gray */
+  border: none;
   padding: 15px 32px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
-  margin: 4px 2px;
-  cursor: pointer;
+  font-size: 16px; 
 }
-    
- p{
-     
-        
-    }
-    
-    
-    
+
+
+button1
+{
+    position: relative;
+    top: 200px;
+    left: 280px; 
 }
+
+button1 
+{
+  transition-duration: 0.4s;
+}
+
+button1:hover 
+{
+  background-color: red;
+  color:white;
+}
+
+
+
+
+   
+    
+    
+

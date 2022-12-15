@@ -6,14 +6,51 @@
         <title>WELCOME TO NASA GLENN</title>
         <meta name="description" content="An interactive website to experience the SUSAN aircraft.">
         <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="ac_quicktime.js"></script>
+        <script> type ="text/javascript" src="https:www1.grc.nasa.gov/wp-content/themes/nasapress/dist/scripts/vendor/selectivizr-min.js"</script>
  
  </head>
     
     <body>
         
-        <h1>WELCOME TO NASA GLENN</h1>
+        <header role= "banner">
+        
+                  <a href="https://www1.grc.nasa.gov/" accesskey="1" title="Home" aria-label="Home">
+                      <img id = "Nasa-logo" src="https://www1.grc.nasa.gov/wp-content/themes/nasapress/dist/images/logo-nasa.svg" alt="NASA logo" style= text-align:left>
+                  </a>
+            
+            <h1>Glenn Research Center</h1>        
+      
+        </header>
+    
+       
+        <div id= "SUSAN intro">
+        
         <h2>Experience the SUSAN aircraft</h2>
+        
+        <img id = "SUSAN aircraft" class="wp-image-43437 size-full" src="https://www1.grc.nasa.gov/wp-content/uploads/susan-highres-2-600x437-1.jpeg" alt="Subsonic Single Aft Engine (SUSAN) aircraft" width="600" height="437" style= float:left>
+            <style>
+                .SUSAN aircraft 
+                {
+                    
+                    border: 10px solid transparent;
+                    padding: 15px;
+                    border-color: beige;
+                }
+                
+                
+            </style>
+                
+           
+        <p1> SUSAN, which stands for SUbsonic Single Aft eNgine (SUSAN) Electrofan, is an aircraft concept designed to reduce environmental pollution caused by current aircrafts. The aircraft accomplishes this goal by having a several important components: a turbofan for traveling long distances, multiple electric engines for efficiency and reduced pollution during short distance travel, t-tail for increased aerodynamics, and natural laminar flow techniques are implemented in the wingbox to reduce drag.
+    
+   </p1>
+            
+            <button1 onclick="location.href='https://www1.grc.nasa.gov/aeronautics/eap/airplane-concepts/susan/';"> For more information about SUSAN</button1>
+        
+        </div> 
+        
+            
+           <h4> Double click button to change camera angle and click button once to change highlighted region</h4>
         
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         
@@ -25,59 +62,101 @@
         
         <button id="mybtn4" align= "center" class="btn btn-fourth" onclick="change4()"> Turbofan</button>
         
-         <p id="paragraphText" align= "center" class="paragraph"> Subsonic Single Aft Engine(SUSAN )</p>
+         <button id="mybtn5" align= "center" class="btn btn-fifth" onclick="change5()"> T-Tail</button>
+        
+         <p2 id="paragraphText" align= "center" class="paragraph"> Subsonic Single Aft Engine(SUSAN)</p2>
+        
+         <p3 id="paragraphText2" align= "center" class="paragraph"> Aircraft model </p3>
         
         
-        <model-viewer align= "center" id= "modelViewer" camera-controls touch-action="pan-y"  skybox-image= "sky.jpg" src="untitled1.gltf" shadow-intensity="0" ></model-viewer>
+        
+        <model-viewer align= "center" id= "modelViewer" camera-controls touch-action="pan-y" camera-orbit="55deg 60deg 4m" camera-target="0m 0m 0m" skybox-image= "sky.jpg" src="untitled1.gltf" shadow-intensity="0" ></model-viewer>
         <style>
             model-viewer {
                   width: 1500px;
                   height: 600px;
 
-            
                 border: 10px solid rgba(0, 0, 0, 0.12);
                         }
 
             button{
 
-                width 50px;
-                height 80px;
+                    width 50px;
+                    height 80px;
 
                 }                  
-</style>
-        
-        
-       
-    <script>
+            
+            </style>
+            
+            
+            <script>
         
         function change()
         {
           
-            document.getElementById("modelViewer").src="untitled1.gltf";  
-            document.getElementById("paragraphText").textContent= "Subsonic Single Aft Engine(SUSAN )";
+            document.getElementById("modelViewer").src="untitled1.gltf"; 
+            document.getElementById("modelViewer").cameraOrbit= "45deg 55deg 4m";
+            document.getElementById("paragraphText").textContent= "Subsonic Single Aft Engine(SUSAN)";
+            document.getElementById("paragraphText2").textContent= "This is NASA's regional transport aircraft concept and its main goal is to to reduce aircraft emissions by 50% per passenger/mile while retaining the size, speed, and range of large regional jets.";
         }
         
         function change2()
         {
-           document.getElementById("modelViewer").src="wingboxHighlighted1.gltf"; 
+            document.getElementById("modelViewer").src="wingboxHighlighted1.gltf";
+            document.getElementById("modelViewer").cameraOrbit= "270deg -45deg -20m";
             document.getElementById("paragraphText").textContent= "Natural Laminar Flow & Boundary Layer Ingestion";
+            document.getElementById("paragraphText2").textContent= "Laminar flow on the main wing upper surface offers the largest potential for drag reduction due to the higher skin friction levels in that region.";
         }
         
         function change3()
         {
             document.getElementById("modelViewer").src="wingEngine.gltf";
+            document.getElementById("modelViewer").cameraOrbit= "300deg 200deg 20m";
             document.getElementById("paragraphText").textContent= "Electric Engines";
+            document.getElementById("paragraphText2").textContent= "The aircraft's aerodynamic and propulsive efficiency is increased through placement of electric engines.";
         }
         
         function change4()
         {
             document.getElementById("modelViewer").src="turbine.gltf";
+            document.getElementById("modelViewer").cameraOrbit= "45deg 90deg 4m";
             document.getElementById("paragraphText").textContent= "20MW Electrified Aircraft Propulsion system";
+            document.getElementById("paragraphText2").textContent= "The turbofan is optimized through sizing and efficiency through control and electric boosting. It is also placed in the back for high performance.";
         }
         
+        function change5()
+        {
+            document.getElementById("modelViewer").src="t-TAIL.gltf";
+            document.getElementById("modelViewer").cameraOrbit= "90 deg 390 deg 0m";
+            document.getElementById("paragraphText").textContent= "T-Tail";
+            document.getElementById("paragraphText2").textContent= "T-Tail keeps wings clear of exhast from engine mounted in the back of the aircraft.";
+        }
+        
+        
+        
     </script>
+      
+            
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+    
         
     </body>
+    
+    
+    
     
 </html>
 
